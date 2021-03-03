@@ -1,0 +1,40 @@
+import turtle
+import random
+
+t1speed=random.randint(1,8)
+t2speed=random.randint(1,8)
+t3speed=random.randint(1,8)
+
+wn = turtle.Screen()
+wn.setup(800, 600)
+t1=turtle.Turtle()
+t2=turtle.Turtle()
+t3=turtle.Turtle()
+
+t1.speed(t1speed)
+t2.speed(t2speed)
+t3.speed(t3speed)
+
+t1.pu()
+t2.pu()
+t3.pu()
+
+t1.setpos(0,100)
+t2.setpos(0,0)
+t3.setpos(0,-100)
+
+t1.pd()
+t2.pd()
+t3.pd()
+
+t1.color("green")
+t2.color("red")
+t3.color("blue")
+
+for i in range(80):
+    t1.forward(random.randint(1,8))
+    t2.forward(random.randint(1,8))
+    t3.forward(random.randint(1,8))
+
+
+turtle.mainloop()
